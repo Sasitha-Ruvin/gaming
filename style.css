@@ -199,7 +199,7 @@
   width: 100%;
   align-items: center;
   justify-items: center;
-  background-image: url("/images/back.jpg");
+  background-image: url("/images/main.webp");
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
@@ -219,7 +219,7 @@
   position: relative;
   color: #ffffff;
 }
-.upcoming-header::before{
+.upcoming-header::before, .games-header::before{
   content: "";
   position: absolute;
   top: 0;
@@ -229,6 +229,31 @@
   background-color: rgba(0, 0, 0, 0.556); 
   z-index: 1; 
 }
+
+
+.games-header{
+  height: 100vh;
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-items: center;
+  background-image: url("/images/games.jpg");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  position: relative;
+  color: #ffffff;
+}
+/* .upcoming-header::before{
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.556); 
+  z-index: 1; 
+} */
 .hero-header-content {
   display: flex;
   position: relative;
@@ -250,7 +275,7 @@
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: rgba(0, 0, 0, 0.556); 
+  background-color: rgba(0, 0, 0, 0.644); 
   z-index: 1; 
 }
 
@@ -1022,6 +1047,7 @@
   gap: 20px;
   flex-wrap: wrap;
   justify-content: center;
+  align-items: center;
 }
 
 
