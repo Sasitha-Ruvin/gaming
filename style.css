@@ -219,7 +219,7 @@
   position: relative;
   color: #ffffff;
 }
-.upcoming-header::before, .games-header::before{
+.upcoming-header::before, .games-header::before, .console-header::before{
   content: "";
   position: absolute;
   top: 0;
@@ -244,16 +244,20 @@
   position: relative;
   color: #ffffff;
 }
-/* .upcoming-header::before{
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-color: rgba(0, 0, 0, 0.556); 
-  z-index: 1; 
-} */
+.console-header{
+  height: 100vh;
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-items: center;
+  background-image: url("/images/access.jpg");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  position: relative;
+  color: #ffffff;
+}
+
 .hero-header-content {
   display: flex;
   position: relative;
@@ -1151,4 +1155,98 @@
   color: var(--fontWhite);
   font-size: 2rem;
   padding-bottom: 3%;
+}
+
+/* Accessories section styles */
+.accessories {
+  max-width: 1200px;
+  margin: auto;
+}
+
+.accessories-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.accessories-header h1 {
+  font-size: 1.5rem;
+  color: #333;
+}
+
+.filters span {
+  color: #666;
+  font-size: 0.9rem;
+}
+
+.filters button {
+  margin-left: 10px;
+  padding: 5px 10px;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  cursor: pointer;
+}
+
+.filters button:hover {
+  background-color: #eee;
+}
+
+/* Grid layout */
+.products-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 20px;
+}
+
+/* Product card styles */
+.product-card {
+  position: relative;
+  background: #fff;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  padding: 20px 10px;
+  cursor: pointer;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.product-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.product-card img {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 15px;
+}
+
+.product-card h2 {
+  font-size: 1rem;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.product-card .category {
+  font-size: 0.8rem;
+  color: #666;
+  display: block;
+  margin-bottom: 20px;
+}
+
+/* Price hover effect */
+.product-card .price {
+  font-size: 1.2rem;
+  color: #333;
+  font-weight: bold;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.3s, transform 0.3s;
+}
+
+.product-card:hover .price {
+  opacity: 1;
+  transform: translateY(0);
 }
