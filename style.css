@@ -199,7 +199,7 @@
   width: 100%;
   align-items: center;
   justify-items: center;
-  background-image: url("/images/main.webp");
+  background-image: url("./images/main.webp");
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
@@ -212,7 +212,7 @@
   width: 100%;
   align-items: center;
   justify-items: center;
-  background-image: url("/images/upcoming.jpg");
+  background-image: url("./images/upcoming.jpg");
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
@@ -236,7 +236,7 @@
   width: 100%;
   align-items: center;
   justify-items: center;
-  background-image: url("/images/about.jpg");
+  background-image: url("./images/about.jpg");
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
@@ -252,7 +252,7 @@
   width: 100%;
   align-items: center;
   justify-items: center;
-  background-image: url("/images/games.jpg");
+  background-image: url("./images/games.jpg");
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
@@ -265,7 +265,7 @@
   width: 100%;
   align-items: center;
   justify-items: center;
-  background-image: url("/images/access.jpg");
+  background-image: url("./images/access.jpg");
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
@@ -616,7 +616,7 @@
 
 .game-section {
   position: relative;
-  background: url('images/reddead2.jpg') no-repeat center center/cover;
+  background: url('./images/reddead2.jpg') no-repeat center center/cover;
   height: 100vh;
   display: flex;
   align-items: center;
@@ -713,11 +713,11 @@
 }
 
 .game-card:nth-child(1) {
-  background-image: url('/images/r6.jpg');
+  background-image: url('./images/r6.jpg');
 }
 
 .game-card:nth-child(2) {
-  background-image: url('/images/starfield.jpg'); /* Replace with Starfield image */
+  background-image: url('./images/starfield.jpg');
 }
 
 .game-card-content {
