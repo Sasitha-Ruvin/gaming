@@ -219,7 +219,7 @@
   position: relative;
   color: #ffffff;
 }
-.upcoming-header::before, .games-header::before, .console-header::before{
+.upcoming-header::before, .games-header::before, .console-header::before, .about-hero-header::before{
   content: "";
   position: absolute;
   top: 0;
@@ -228,6 +228,21 @@
   bottom: 0;
   background-color: rgba(0, 0, 0, 0.556); 
   z-index: 1; 
+}
+
+.about-hero-header{
+  height: 100vh;
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-items: center;
+  background-image: url("/images/about.jpg");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  position: relative;
+  color: #ffffff;
+
 }
 
 
@@ -1563,6 +1578,220 @@
       font-size: 0.9rem;
   }
 }
+
+.about-us {
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  gap: 20px;
+}
+
+.about-us .image {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.about-us .image img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.about-us .content {
+  flex: 1;
+  background-color: #000000;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.about-us .content h2 {
+  font-size: 1.8rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: var(--fontWhite);
+  font-family: var(--mainFont);
+}
+
+.about-us .content p {
+  font-size: 1.5rem;
+  line-height: 1.6;
+  color: var(--fontWhite);
+  font-family: var(--mainFont);
+}
+
+@media (max-width: 768px) {
+  .about-us {
+      flex-direction: column;
+      text-align: center;
+  }
+
+  .about-us .content {
+      margin-top: 20px;
+  }
+}
+
+
+
+.branches-section{
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+.branches-container{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  width: 90%;
+  align-items: center;
+  justify-content: center;
+}
+
+.branch-card{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  width: 100%;
+  gap: 2%;
+  justify-content: center;
+  align-items: center;
+  margin-top: 5%;
+}
+
+.branch-name{
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  font-size: 1.5em;
+  font-family: var(--mainFont);
+  color: var(--fontWhite);
+}
+.branch-map{
+  width: 100%;
+  display: flex;
+}
+.branch-map iframe{
+  width: 100%;
+}
+
+.branch-description{
+  margin-top: 2%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  font-family: var(--mainFont);
+  font-size: 1em;
+  width: 90%;
+  color: var(--fontWhite);
+
+}
+
+.branch-images{
+  display: flex;
+  margin-top: 2%;
+  flex-direction: row;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  gap: 5%;
+}
+
+.branch-images img{
+  width: 40%;
+  transition: 0.5s ease-in;
+  cursor: pointer;
+}
+
+.time{
+  display: flex;
+  flex-direction: column;
+  font-family: var(--mainFont);
+  color: var(--fontWhite);
+  font-size: 1.4rem;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.branch-images img:hover{
+  transform: scale(1.02);
+}
+
+@media (max-width:760px){
+  .branch-images{
+      flex-direction: column;
+  }
+  .branch-images img{
+      width: 80%;
+      margin-top: 2%;
+  }
+  .expertise{
+      flex-direction: column;
+  }
+  .expertise-container{
+      flex-direction: column;
+  }
+  .expertise-text{
+      width: 80%;
+  }
+  .expertise-image{
+      width: 80%;
+  }
+}
+.responsive service-summary{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.responsive-table{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+section.responsive-table table thead {
+  background-color: #000000;
+  color: var(--fontWhite);
+}
+
+section.service-summary section.responsive-table {
+  width: 100%;
+  overflow-x: auto;
+  margin: 1em 0;
+}
+
+section.responsive-table table 
+{
+  border-collapse: separate;
+  border-spacing: 0;
+}
+
+section.responsive-table table th,
+section.responsive-table table td {
+  border: .01em solid var(--color-1-c);
+  padding: .5em;
+  text-align: center;
+  color: var(--fontWhite);
+}
+
+section.responsive-table table td.bad-indicator {
+  color: var(--fontWhite);
+}
+
+section.responsive-table table td.good-indicator {
+  color: var(--fontWhite);
+}
+
+.map-containter{
+  width: 100%;
+}
+
+
 
 
 
